@@ -1,0 +1,1 @@
+from myapp2 import *
