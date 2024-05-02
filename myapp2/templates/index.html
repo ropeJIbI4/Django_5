@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+{% block content %}
+  <h1>Заказанные товары</h1>
+
+  <h2>Последние 7 дней</h2>
+  <ul>
+    {% for order in orders_7_days %}
+  <li>
+    {{ order.order_date }} - {{ order.client.name }} 
+    {% for product in order.products.all %}
+      - {{ product }} 
+    {% endfor %}
+  </li>
+{% endfor %}
+  </ul>
+
+  <h2>Последние 30 дней</h2>
+  <ul>
+    {% for order in orders_30_days %}
+  <li>
+    {{ order.order_date }} - {{ order.client.name }}
+    {% for product in order.products.all %}
+      - {{ product }} 
+    {% endfor %}
+  </li>
+{% endfor %}
+  </ul>
+
+  <h2>Последние 365 дней</h2>
+  <ul>
+    {% for order in orders_365_days %}
+  <li>
+    {{ order.order_date }} - {{ order.client.name }} 
+    {% for product in order.products.all %}
+      - {{ product }} 
+    {% endfor %}
+  </li>
+{% endfor %}
+  </ul>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <p>
+        {{ form.name.label_tag }}
+        {{ form.name }}
+    </p>
+    <p>
+        {{ form.description.label_tag }}
+        {{ form.description }}
+    </p>
+    <p>
+        {{ form.price.label_tag }}
+        {{ form.price }}
+    </p>
+    <p>
+        {{ form.quantity.label_tag }}
+        {{ form.quantity }}
+    </p>
+    <p>
+        {{ form.image.label_tag }}
+        <input type="file" name="{{ form.image.html_name }}">
+    </p>
+    <button type="submit">Создать продукт</button>
+</form>
+{% endblock %}
+</body>
+</html>
