@@ -43,31 +43,6 @@
     {% endfor %}
   </li>
 {% endfor %}
-  </ul>
-  <form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    <p>
-        {{ form.name.label_tag }}
-        {{ form.name }}
-    </p>
-    <p>
-        {{ form.description.label_tag }}
-        {{ form.description }}
-    </p>
-    <p>
-        {{ form.price.label_tag }}
-        {{ form.price }}
-    </p>
-    <p>
-        {{ form.quantity.label_tag }}
-        {{ form.quantity }}
-    </p>
-    <p>
-        {{ form.image.label_tag }}
-        <input type="file" name="{{ form.image.html_name }}">
-    </p>
-    <button type="submit">Создать продукт</button>
-</form>
 {% endblock %}
 </body>
 </html>
