@@ -1,6 +1,6 @@
 from datetime import *
-from django.shortcuts import render,redirect
-from .models import Order
+from django.shortcuts import render, redirect, get_object_or_404
+from .models import Order,Product,Client
 from .forms import ProductForm
 
 

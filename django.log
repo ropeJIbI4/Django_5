@@ -6445,3 +6445,2303 @@ Watching for file changes with StatReloader
 Not Found: /
 "GET / HTTP/1.1" 404 2429
 "GET /create_product/ HTTP/1.1" 200 1156
+Watching for file changes with StatReloader
+"GET /create_product/ HTTP/1.1" 200 1156
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3584
+"GET /create_product/ HTTP/1.1" 200 1156
+Not Found: /
+"GET / HTTP/1.1" 404 3533
+Not Found: /
+"GET / HTTP/1.1" 404 3533
+- Broken pipe from ('127.0.0.1', 55075)
+"GET /admin/myapp2/product/ HTTP/1.1" 200 11012
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+"GET /static/admin/css/base.css HTTP/1.1" 200 21544
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/core.js HTTP/1.1" 200 6208
+"GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/myapp2/client/ HTTP/1.1" 200 11029
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /clients HTTP/1.1" 301 0
+Internal Server Error: /clients/
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\web_project\myapp2\views.py", line 52, in clients_list
+    return render(request, "clients/clients_list.html", {"clients": clients})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: clients/clients_list.html
+"GET /clients/ HTTP/1.1" 500 84697
+"GET /clients/1 HTTP/1.1" 301 0
+Internal Server Error: /clients/1/
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\web_project\myapp2\views.py", line 47, in client_detail
+    return render(request, "clients/client_detail.html", {"client": client})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: clients/client_detail.html
+"GET /clients/1/ HTTP/1.1" 500 83490
+Not Found: /clients/biba
+"GET /clients/biba HTTP/1.1" 404 3587
+Not Found: /clients/Biba
+"GET /clients/Biba HTTP/1.1" 404 3587
+Not Found: /Orders/Biba
+"GET /Orders/Biba HTTP/1.1" 404 3584
+"GET /admin/myapp2/order/ HTTP/1.1" 200 9832
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/3/change/ HTTP/1.1" 200 13839
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+"GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+"GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+"GET /admin/myapp2/product/ HTTP/1.1" 200 11012
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/9/change/ HTTP/1.1" 200 11929
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Not Found: /Orders/Frodo
+"GET /Orders/Frodo HTTP/1.1" 404 3587
+Not Found: /Orders
+"GET /Orders HTTP/1.1" 404 3569
+Not Found: /
+"GET / HTTP/1.1" 404 3533
+"GET /products HTTP/1.1" 301 0
+Internal Server Error: /products/
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\web_project\myapp2\views.py", line 62, in products_list
+    return render(request, "products/products_list.html", {"products": products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: products/products_list.html
+"GET /products/ HTTP/1.1" 500 83774
+Internal Server Error: /products/
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\web_project\myapp2\views.py", line 62, in products_list
+    return render(request, "products/products_list.html", {"products": products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: products/products_list.html
+"GET /products/ HTTP/1.1" 500 83911
+Internal Server Error: /products/
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\web_project\myapp2\views.py", line 62, in products_list
+    return render(request, "products/products_list.html", {"products": products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: products/products_list.html
+"GET /products/ HTTP/1.1" 500 83911
+"GET /product HTTP/1.1" 301 0
+"GET /product/ HTTP/1.1" 200 795
+Not Found: /
+"GET / HTTP/1.1" 404 3533
+Internal Server Error: /clients/
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\web_project\myapp2\views.py", line 52, in clients_list
+    return render(request, "clients/clients_list.html", {"clients": clients})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: clients/clients_list.html
+"GET /clients/ HTTP/1.1" 500 84697
+Not Found: /clients/Biba
+"GET /clients/Biba HTTP/1.1" 404 3587
+F:\Programming\Django\web_project\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /clients/Biba
+"GET /clients/Biba HTTP/1.1" 404 3587
+Not Found: /clients/Biba
+"GET /clients/Biba HTTP/1.1" 404 3587
+Not Found: /clients/Biba
+"GET /clients/Biba HTTP/1.1" 404 3587
+Internal Server Error: /clients/
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\web_project\myapp2\views.py", line 51, in clients_list
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: clients/clients_list.html
+"GET /clients/ HTTP/1.1" 500 81874
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/myapp2/ HTTP/1.1" 200 5875
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /admin/ HTTP/1.1" 200 10530
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+"GET /admin/auth/group/ HTTP/1.1" 200 8339
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /admin/auth/user/ HTTP/1.1" 200 12318
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12461
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\urls.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/product/ HTTP/1.1" 200 11012
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 11029
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 11012
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12461
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 11012
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12461
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 11029
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12397
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12461
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 13278
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12461
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12397
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12461
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 13278
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12461
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12397
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 12318
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/user/ HTTP/1.1" 200 8065
+"GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+"POST /admin/auth/user/ HTTP/1.1" 302 0
+"GET /admin/auth/user/ HTTP/1.1" 200 11983
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 11849
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 8339
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 11849
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/add/ HTTP/1.1" 200 11231
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/user/add/ HTTP/1.1" 200 11533
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/user/add/ HTTP/1.1" 200 11431
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/user/add/ HTTP/1.1" 200 11506
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 11849
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/2/change/ HTTP/1.1" 200 22376
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+"GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15492
+"GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+"GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+"GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+"GET /admin/auth/group/ HTTP/1.1" 200 8339
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/add/ HTTP/1.1" 200 12762
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/group/add/ HTTP/1.1" 302 0
+"GET /admin/auth/group/ HTTP/1.1" 200 9785
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/1/change/ HTTP/1.1" 200 12974
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 12140
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/2/change/ HTTP/1.1" 200 22412
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
+"GET /admin/auth/user/ HTTP/1.1" 200 12332
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 9592
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/1/change/ HTTP/1.1" 200 12974
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 12140
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/2/change/ HTTP/1.1" 200 22421
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 9592
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/auth/group/ HTTP/1.1" 200 9592
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12958
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 13278
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12958
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12397
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12958
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12958
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12958
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12958
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 13278
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12397
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12683
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/client/ HTTP/1.1" 200 13137
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12958
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12878
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13149
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13149
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13149
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13149
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13149
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12916
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 13278
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12916
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/myapp2/order/
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'product_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Order has no field named 'product_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 345, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in __init__
+    super().__init__(*items)
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "F:\Programming\Django\web_project\myapp2\admin.py", line 55, in product_name
+    return obj.product.name
+           ^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'product'. Did you mean: 'products'?
+"GET /admin/myapp2/order/ HTTP/1.1" 500 352488
+Internal Server Error: /admin/myapp2/order/
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'product_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Order has no field named 'product_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 345, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in __init__
+    super().__init__(*items)
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "F:\Programming\Django\web_project\myapp2\admin.py", line 55, in product_name
+    return obj.product.name
+           ^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'product'. Did you mean: 'products'?
+"GET /admin/myapp2/order/ HTTP/1.1" 500 352488
+Internal Server Error: /admin/myapp2/order/
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'product_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Order has no field named 'product_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 345, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in __init__
+    super().__init__(*items)
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "F:\Programming\Django\web_project\myapp2\admin.py", line 55, in product_name
+    return obj.product.name
+           ^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'product'. Did you mean: 'products'?
+"GET /admin/myapp2/order/ HTTP/1.1" 500 352488
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/myapp2/order/
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'product_price'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Order has no field named 'product_price'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 345, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in __init__
+    super().__init__(*items)
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "F:\Programming\Django\web_project\myapp2\admin.py", line 55, in product_price
+    return obj.product.price
+           ^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'product'. Did you mean: 'products'?
+"GET /admin/myapp2/order/ HTTP/1.1" 500 352292
+Internal Server Error: /admin/myapp2/order/
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'product_price'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Order has no field named 'product_price'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 345, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in __init__
+    super().__init__(*items)
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "F:\Programming\Django\web_project\myapp2\admin.py", line 55, in product_price
+    return obj.product.price
+           ^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'product'. Did you mean: 'products'?
+"GET /admin/myapp2/order/ HTTP/1.1" 500 352292
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /admin/myapp2/order/
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'product_price'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Order has no field named 'product_price'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 345, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in __init__
+    super().__init__(*items)
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "F:\Programming\Django\web_project\myapp2\admin.py", line 55, in product_price
+    return obj.product.price
+           ^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'product'. Did you mean: 'products'?
+"GET /admin/myapp2/order/ HTTP/1.1" 500 352292
+Internal Server Error: /admin/myapp2/order/
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'product_price'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Order has no field named 'product_price'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 345, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in __init__
+    super().__init__(*items)
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "F:\Programming\Django\web_project\myapp2\admin.py", line 55, in product_price
+    return obj.product.price
+           ^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'product'. Did you mean: 'products'?
+"GET /admin/myapp2/order/ HTTP/1.1" 500 352292
+Internal Server Error: /admin/myapp2/order/
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'product_price'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Order has no field named 'product_price'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 345, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in __init__
+    super().__init__(*items)
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "F:\Programming\Django\web_project\myapp2\admin.py", line 55, in product_price
+    return obj.product.price
+           ^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'product'. Did you mean: 'products'?
+"GET /admin/myapp2/order/ HTTP/1.1" 500 352292
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 13278
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 13137
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 13278
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 12140
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/2/change/ HTTP/1.1" 200 22421
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Not Found: /
+"GET / HTTP/1.1" 404 2429
+"GET /admin/auth/user/2/change/ HTTP/1.1" 200 22421
+"GET /admin/password_change/ HTTP/1.1" 200 7870
+"GET /admin/auth/ HTTP/1.1" 200 5552
+"GET /admin/auth/user/add/ HTTP/1.1" 200 11231
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 13137
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 13278
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 13137
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 12140
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 9592
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 12140
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Watching for file changes with StatReloader
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 13278
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /clients/
+"GET /clients/ HTTP/1.1" 404 2471
+"GET /admin/myapp2/product/ HTTP/1.1" 200 13278
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 13137
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 13278
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 13137
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 13278
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 13137
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 13183
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/product/ HTTP/1.1" 200 13183
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12690
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12690
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12690
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12130
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12130
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12130
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12130
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12448
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12130
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12403
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12403
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12448
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12130
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12403
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12130
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12448
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12448
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12448
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12130
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12403
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12130
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12448
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12448
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12130
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12403
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12130
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12448
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12403
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12403
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12403
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12403
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12403
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12403
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12403
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 12130
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/?o=8 HTTP/1.1" 200 12516
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/?o=-8 HTTP/1.1" 200 12523
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/?o=1.-8 HTTP/1.1" 200 12903
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/?o=-1.-8 HTTP/1.1" 200 12912
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/?o=1.-8 HTTP/1.1" 200 12903
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12403
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 13183
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 13183
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12122
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12957
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\models.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\models.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\models.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\models.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12957
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Internal Server Error: /admin/myapp2/order/
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: myapp2_order.status
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\options.py", line 2124, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: myapp2_order.status
+"GET /admin/myapp2/order/ HTTP/1.1" 500 172690
+Watching for file changes with StatReloader
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12122
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12957
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12122
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/9/change/ HTTP/1.1" 200 11929
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12957
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12122
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/?p=2 HTTP/1.1" 200 12234
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/?p=3 HTTP/1.1" 200 11403
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12957
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13225
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/3/change/ HTTP/1.1" 200 14342
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12957
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12957
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12957
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12957
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12957
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13614
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13714
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+Internal Server Error: /admin/myapp2/order/
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'is_completed'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\options.py", line 2018, in changelist_view
+    response = self.response_action(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1650, in response_action
+    response = func(self, request, queryset)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\web_project\myapp2\admin.py", line 62, in completed
+    queryset.update(is_completed=True)
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\query.py", line 1228, in update
+    query.add_update_values(kwargs)
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\sql\subqueries.py", line 88, in add_update_values
+    field = self.get_meta().get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Order has no field named 'is_completed'
+"POST /admin/myapp2/order/ HTTP/1.1" 500 137349
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /admin/myapp2/order/ HTTP/1.1" 302 0
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13714
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/myapp2/order/ HTTP/1.1" 302 0
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13714
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/myapp2/order/ HTTP/1.1" 302 0
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13714
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/myapp2/order/ HTTP/1.1" 302 0
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13714
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12957
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12122
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+F:\Programming\Django\web_project\myapp2\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12957
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13714
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12122
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13714
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12957
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12122
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13714
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12957
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12122
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 9592
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/add/ HTTP/1.1" 200 12762
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/group/add/ HTTP/1.1" 302 0
+"GET /admin/auth/group/ HTTP/1.1" 200 10039
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/1/change/ HTTP/1.1" 200 12974
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 12201
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/2/change/ HTTP/1.1" 200 22456
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
+"GET /admin/auth/user/ HTTP/1.1" 200 12393
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 9847
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/1/change/ HTTP/1.1" 200 12974
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 12201
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/add/ HTTP/1.1" 200 11231
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/user/add/ HTTP/1.1" 200 11425
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/user/add/ HTTP/1.1" 200 11425
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+- Broken pipe from ('127.0.0.1', 62004)
+Internal Server Error: /admin/auth/user/add/
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\views\decorators\debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\auth\admin.py", line 121, in add_view
+    return self._add_view(request, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\auth\admin.py", line 149, in _add_view
+    return super().add_view(request, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1945, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1804, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1855, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\admin\options.py", line 1259, in save_model
+    obj.save()
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\contrib\auth\base_user.py", line 78, in save
+    super().save(*args, **kwargs)
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Programming\Django\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+"POST /admin/auth/user/add/ HTTP/1.1" 500 251676
+Watching for file changes with StatReloader
+"POST /admin/auth/user/add/ HTTP/1.1" 200 11425
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 9847
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 12639
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/3/change/ HTTP/1.1" 200 22367
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/add/?_to_field=id&_popup=1 HTTP/1.1" 200 8343
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/group/add/?_to_field=id&_popup=1 HTTP/1.1" 200 327
+"GET /static/admin/js/popup_response.js HTTP/1.1" 200 551
+"POST /admin/auth/user/3/change/ HTTP/1.1" 302 0
+"GET /admin/auth/user/ HTTP/1.1" 200 12896
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 10107
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 12703
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 10107
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 12703
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 10107
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/1/change/ HTTP/1.1" 200 12974
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 10107
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/3/change/ HTTP/1.1" 200 12982
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 10107
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/2/change/ HTTP/1.1" 200 12970
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 10107
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 12703
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 10107
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 12703
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/add/ HTTP/1.1" 200 11231
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/user/add/ HTTP/1.1" 200 11426
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/user/add/ HTTP/1.1" 200 11426
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/user/add/ HTTP/1.1" 200 11415
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/user/add/ HTTP/1.1" 200 11415
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/user/add/ HTTP/1.1" 200 11414
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 10107
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 12703
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/add/ HTTP/1.1" 200 11231
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/user/add/ HTTP/1.1" 302 0
+"GET /admin/auth/user/4/change/ HTTP/1.1" 200 22630
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 1094
+"POST /admin/auth/user/4/change/ HTTP/1.1" 302 0
+"GET /admin/auth/user/ HTTP/1.1" 200 13336
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/3/change/ HTTP/1.1" 200 22414
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/user/3/change/ HTTP/1.1" 302 0
+"GET /admin/auth/user/ HTTP/1.1" 200 13335
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 10107
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/3/change/ HTTP/1.1" 200 12982
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 10107
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/1/change/ HTTP/1.1" 200 12974
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"POST /admin/auth/group/1/change/ HTTP/1.1" 302 0
+"GET /admin/auth/group/ HTTP/1.1" 200 10302
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12957
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 10107
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/1/change/ HTTP/1.1" 200 13298
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/user/ HTTP/1.1" 200 13142
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/ HTTP/1.1" 200 10107
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/auth/group/2/change/ HTTP/1.1" 200 12970
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/client/ HTTP/1.1" 200 12957
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/product/ HTTP/1.1" 200 12122
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /admin/myapp2/order/ HTTP/1.1" 200 13714
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
